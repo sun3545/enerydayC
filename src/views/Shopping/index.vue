@@ -22,7 +22,7 @@
         <div class="shopping-footer">
             <van-submit-bar
                 :price="allMoney"
-                :button-text="`去结算(${totalNum})`"
+                :button-text="`去结算(${totalNum?totalNum:'0.00'})`"
                 @submit="onSubmit"
             >
                 <van-checkbox v-model="checked" @click="checkAll()"

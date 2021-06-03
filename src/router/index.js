@@ -13,8 +13,8 @@ const routes = [
         children: [
             {
                 name: "Classify",
-                path:"classify/:id",
-                component:Classify,
+                path: "classify/:id",
+                component: Classify,
             },
             {
                 name: "Shopping",
@@ -25,9 +25,18 @@ const routes = [
     },
     {
         path: "/search",
-        name:"Search",
-        component:()=>import("@/views/Search")
-    }
+        name: "Search",
+        component: () => import("@/views/Search")
+    },
+    {
+        path: "/",
+        redirect: { name:"Classify"}
+    },
+    {
+        path: "/my",
+        name: "My",
+        component: () => import("@/views/Search")
+    },
 ]
 
 const router = new VueRouter({
