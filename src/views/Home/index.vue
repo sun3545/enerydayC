@@ -27,9 +27,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.home-footer {
-    & > div {
-        width: 375px;
-    }
-}
+// .home-footer {
+//     & > div {
+//         width: 375px;
+//     }
+// }
 </style>

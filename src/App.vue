@@ -44,6 +44,9 @@ export default {
 };
 </script>
 <style lang="less">
+#app{
+    width: 375px;
+}
 .view {
     position: absolute;
     left: 0;

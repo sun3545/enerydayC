@@ -98,11 +98,12 @@ export default {
             counterMap: (state) => state.counterMap,
         }),
         badge() {
-            if(!this.counterMap){
+            const keys = Object.values(this.counterMap);
+            if(!keys.length){
                 console.log(this.counterMap)
-                return
+                return "fjsdkljfjlsdkjfklj"
             }
-            const count = Object.values(this.counterMap).reduce(
+            const count = keys.reduce(
                 (prev, next) => prev + next
             );
             if (count > 99) {
