@@ -1,5 +1,5 @@
 theme: jekyll-theme-minimal
 url: https://sun3545.github.io
-root: /enerydayC/
+root: /sun3545.github.io/enerydayC/
 permalink: :year/:month/:day/:title.html
 permalink_defaults:
